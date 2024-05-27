@@ -1,16 +1,16 @@
-# QR Code Generator Telegram Bot
+# Телеграм-бот для генерации QR-кодов
 
-This repository contains the source code for a Telegram bot that generates QR codes. The bot allows users to easily create QR codes by sending text messages. Additionally, users can customize the color of their QR codes through the bot's interface.
+Этот репозиторий содержит исходный код телеграм-бота, который генерирует QR-коды. Бот позволяет пользователям легко создавать QR-коды, отправляя текстовые сообщения. Кроме того, пользователи могут настраивать цвет своих QR-кодов через интерфейс бота.
 
-## Features
+## Функциональные возможности
 
-- **Generate QR Codes:** Simply send a text message to the bot, and it will generate a QR code for you.
-- **Customize QR Code Color:** Choose from a variety of colors to customize your QR code.
-- **Easy to Use:** Intuitive commands and interface for a seamless user experience.
+- **Создание QR-кодов:** Просто отправьте текстовое сообщение боту, и он сгенерирует для вас QR-код.
+- **Настройка цвета QR-кода:** Выберите из множества цветов для настройки вашего QR-кода.
+- **Удобство использования:** Интуитивно понятные команды и интерфейс для бесшовного пользовательского опыта.
 
-## Requirements
+## Требования
 
-The following Python packages are required to run the bot:
+Для запуска бота требуются следующие пакеты Python:
 
 - aiofiles==23.2.1
 - aiogram==3.6.0
@@ -33,48 +33,48 @@ The following Python packages are required to run the bot:
 - typing_extensions==4.12.0
 - yarl==1.9.4
 
-## Installation
+## Установка
 
-1. Clone the repository:
+1. Клонируйте репозиторий:
     ```bash
     git clone https://github.com/yourusername/qr-code-generator-bot.git
     cd qr-code-generator-bot
     ```
 
-2. Install the dependencies:
+2. Установите зависимости:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Create a `.env` file with your bot token:
+3. Создайте файл `.env` с вашим токеном бота:
     ```
     TOKEN=your_telegram_bot_token
     ```
 
-## Usage
+## Использование
 
-1. Run the bot:
+1. Запустите бота:
     ```bash
     python main.py
     ```
 
-2. Start a conversation with your bot on Telegram.
+2. Начните диалог с вашим ботом в Телеграме.
 
-3. Send a text message to generate a QR code.
+3. Отправьте текстовое сообщение для создания QR-кода.
 
-4. Use the provided inline keyboard to customize the color of your QR code.
+4. Используйте встроенную клавиатуру для настройки цвета вашего QR-кода.
 
-## Bot Commands
+## Команды бота
 
-- **/start:** Initiates the bot and provides instructions.
-- **Text Message:** Sends a text message to generate a QR code.
-- **Inline Keyboard:** Select a color to customize your QR code.
+- **/start:** Инициализирует бота и предоставляет инструкции.
+- **Текстовое сообщение:** Отправьте текстовое сообщение для создания QR-кода.
+- **Встроенная клавиатура:** Выберите цвет для настройки вашего QR-кода.
 
-## Main Code Overview
+## Основной код
 
-The main functionality of the bot is implemented in `main.py`, which initializes the bot and sets up the command handlers. The QR code generation logic is handled by the `create_code` function in the `utils/qr.py` file. The bot uses the Aiogram library for interaction with the Telegram API and Segno for QR code generation.
+Основная функциональность бота реализована в `main.py`, который инициализирует бота и настраивает обработчики команд. Логика генерации QR-кодов находится в функции `create_code` в файле `utils/qr.py`. Бот использует библиотеку Aiogram для взаимодействия с API Телеграм и Segno для генерации QR-кодов.
 
-### Example Code Snippet
+### Пример кода
 
 ```python
 from aiogram import Bot, Dispatcher
@@ -97,14 +97,14 @@ if __name__ == '__main__':
     run(main())
 ```
 
-## Contributing
+## Вклад
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements or new features.
+Вклады приветствуются! Пожалуйста, не стесняйтесь отправлять запрос на слияние или открывать issue для обсуждения улучшений или новых функций.
 
-## License
+## Лицензия
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Этот проект лицензирован на условиях лицензии MIT. См. файл LICENSE для подробностей.
 
 ---
 
-Enjoy generating QR codes with your new Telegram bot! If you have any questions or need further assistance, feel free to reach out.
+Наслаждайтесь генерацией QR-кодов с помощью вашего нового телеграм-бота! Если у вас есть вопросы или вам нужна дополнительная помощь, не стесняйтесь обращаться.
